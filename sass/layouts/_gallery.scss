@@ -1,0 +1,24 @@
+.gallery {
+  padding-top: 0;
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__description {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+  width: 370px;
+  height: 70px;
+  text-align: center;
+}
+
+.gallery__title {
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--main-white-color);
+  padding-top: 27px;
+}

@@ -1,0 +1,25 @@
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+
+.card-thumb__content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  padding: 63px 24px;
+
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--main-white-color);
+
+  transform: translateY(103%);
+  transition: transform var(--animation);
+
+  .card__link:hover & {
+    transform: translateY(0);
+  }
+}

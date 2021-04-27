@@ -1,0 +1,45 @@
+.footer__subscribe {
+  display: inline-block;
+  min-width: 575px;
+  height: 86px;
+}
+
+.footer__input {
+  width: 358px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  line-height: 1.25;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  color: var(--main-white-color);
+  background-color: var(--dark-bg-color);
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+.footer__button {
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px 28px;
+  margin-left: 12px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer__submit {
+  fill: currentColor;
+  margin-left: 10px;
+}

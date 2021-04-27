@@ -1,0 +1,26 @@
+.form__check-label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.form__icon-check {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 7px;
+
+  border: 2px solid var(--title-text-color);
+  border-radius: 4px;
+
+  .form__checkbox:checked + & {
+    border-color: var(--accent-color);
+    background-color: var(--accent-color);
+    background-image: url(../images/icons.svg/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+}

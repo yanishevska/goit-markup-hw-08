@@ -1,0 +1,20 @@
+.button {
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: var(--title-text-color);
+  background-color: var(--background-button);
+  cursor: pointer;
+  border-radius: 4px;
+
+  transition: color var(--animation), background-color var(--animation);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--main-white-color);
+  }
+}
