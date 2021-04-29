@@ -39,7 +39,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -85,11 +85,29 @@ address {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .logo {
@@ -145,7 +163,6 @@ address {
 
 .filter {
   display: flex;
-  justify-content: center;
 }
 
 .filter__button {
@@ -157,8 +174,35 @@ address {
   transition: box-shadow var(--animation), color var(--animation), background-color var(--animation);
 }
 
+@media screen and (max-width: 767px) {
+  .filter__button {
+    margin-bottom: 15px;
+  }
+}
+
 .filter__button:hover, .filter__button:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 767px) {
+  .filter {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
 }
 
 .card-thumb {
@@ -274,6 +318,12 @@ address {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .navigation__container {
+    display: none;
+  }
+}
+
 .navigation__list {
   display: flex;
   margin-left: 93px;
@@ -318,24 +368,56 @@ address {
 }
 
 .contacts {
-  display: flex;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+  }
+}
+
+.contacts__block {
   margin-left: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__block {
+    font-size: 12px;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__block {
+    display: none;
+  }
 }
 
 .contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
 .contacts__link {
-  display: flex;
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
   fill: var(--main-text-color);
   transition: fill var(--animation), color var(--animation);
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    display: flex;
+  }
 }
 
 .contacts__link:hover, .contacts__link:focus {
@@ -348,7 +430,6 @@ address {
 }
 
 .card__container {
-  margin-top: 50px;
   flex-direction: row;
 }
 
@@ -381,25 +462,68 @@ address {
   border-bottom: 1px solid var(--border-box-color);
   border-left: 1px solid var(--border-box-color);
   border-right: 1px solid var(--border-box-color);
-  width: 370px;
   box-sizing: border-box;
 }
 
+.card__item {
+  --grid-item: 1;
+  margin-top: 30px;
+}
+
+@media screen and (min-width: 480px) {
+  .card__item {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__item {
+    --grid-item: 2;
+    margin-right: 30px;
+    max-width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card__item {
+    --grid-item: 3;
+    margin-right: 30px;
+    max-width: 370px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__item:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
 .footer {
-  display: flex;
   background-color: var(--dark-bg-color);
 }
 
 .footer__section {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .footer__container {
-  display: flex;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+  }
 }
 
 .footer__title {
@@ -414,10 +538,18 @@ address {
   padding-bottom: 20px;
 }
 
-.footer__address {
-  display: inline-block;
-  margin-right: 70px;
-  width: 231px;
+@media screen and (min-width: 1200px) {
+  .footer__address {
+    display: inline-block;
+    margin-right: 70px;
+    width: 231px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer__address {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__contacts {
@@ -438,16 +570,62 @@ address {
 }
 
 .footer__social {
-  display: inline-block;
-  align-items: flex-start;
-  margin-right: 93px;
   width: 206px;
 }
 
-.footer__subscribe {
-  display: inline-block;
-  min-width: 575px;
-  height: 86px;
+@media screen and (max-width: 767px) {
+  .footer__social {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer__social {
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    display: inline-block;
+    align-items: flex-start;
+    margin-right: 93px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer__tablet {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+  .footer__tablet {
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__subscribe {
+    display: inline-block;
+    min-width: 575px;
+    height: 86px;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer__subscribe {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .footer__input {
@@ -466,7 +644,6 @@ address {
 }
 
 .footer__button {
-  display: inline-flex;
   align-items: center;
   text-align: center;
   padding: 10px 28px;
@@ -481,6 +658,26 @@ address {
   background-color: var(--accent-color);
   color: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__button {
+    display: inline-flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1198px) {
+  .footer__button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer__button {
+    margin-top: 20px;
+  }
 }
 
 .footer__submit {
