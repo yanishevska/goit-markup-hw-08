@@ -525,16 +525,16 @@ address {
 }
 
 .contacts__link {
+  display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
   fill: var(--main-text-color);
   transition: fill var(--animation), color var(--animation);
 }
 
 @media screen and (min-width: 1200px) {
   .contacts__link {
-    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
@@ -545,6 +545,12 @@ address {
 
 .contacts__icon {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__icon {
+    margin-right: 8px;
+  }
 }
 
 .hero {
@@ -913,7 +919,6 @@ address {
 }
 
 .footer__input {
-  width: 358px;
   padding: 15px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -925,6 +930,19 @@ address {
 
 .footer__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1199.98px) {
+  .footer__input {
+    width: 100%;
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__input {
+    min-width: 358px;
+  }
 }
 
 .footer__button {
@@ -947,14 +965,6 @@ address {
 @media screen and (min-width: 1200px) {
   .footer__button {
     display: inline-flex;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 1198px) {
-  .footer__button {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
