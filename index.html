@@ -27,48 +27,74 @@
             ><span class="logo__title--color">Web</span><span>Studio</span></a
           >
         </div>
-
-        <nav class="navigation navigation__container">
-          <ul class="navigation__list list">
-            <li class="navigation__item">
-              <a href="" class="navigation__link link navigation__link--current"
-                >Студия</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link link"
-                >Портфолио</a
-              >
-            </li>
-            <li class="navigation__item">
-              <a href="#address" class="navigation__link link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="contacts__block">
-          <ul class="contacts list">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="link contacts__link">
-                <svg class="contacts__icon" width="16" height="12">
-                  <use
-                    href="./images/icons.svg/sprite.svg#icon-envelope-hover"
-                  ></use>
-                </svg>
-                info@devstudio.com</a
-              >
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+380961111111" class="link contacts__link">
-                <svg class="contacts__icon" width="10" height="16">
-                  <use
-                    href="./images/icons.svg/sprite.svg#icon-smartphone"
-                  ></use>
-                </svg>
-                +38 096 111 11 11</a
-              >
-            </li>
-          </ul>
+        <div class="mobile__menu" id="mobile__menu" data-menu>
+          <nav class="navigation navigation__container">
+            <ul class="navigation__list list">
+              <li class="navigation__item">
+                <a
+                  href=""
+                  class="navigation__link link navigation__link--current"
+                  >Студия</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="./portfolio.html" class="navigation__link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="navigation__item">
+                <a href="#address" class="navigation__link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="contacts__block">
+            <ul class="contacts list">
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="link contacts__link">
+                  <svg class="contacts__icon" width="16" height="12">
+                    <use
+                      href="./images/icons.svg/sprite.svg#icon-envelope-hover"
+                    ></use>
+                  </svg>
+                  info@devstudio.com</a
+                >
+              </li>
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="link contacts__link">
+                  <svg class="contacts__icon" width="10" height="16">
+                    <use
+                      href="./images/icons.svg/sprite.svg#icon-smartphone"
+                    ></use>
+                  </svg>
+                  +38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
+        <button
+          class="menu__button is-open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile__menu"
+          data-menu-button
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="переключатель мобильного меню"
+          >
+            <use
+              class="menu__icon-menu"
+              href="./images/icons.svg/burg.svg#icon-menu"
+            ></use>
+
+            <use
+              class="menu__icon-cross"
+              href="./images/icons.svg/burg.svg#icon-close_mobile"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -772,5 +798,6 @@
       </div>
     </div>-->
     <!-- <script src="./js/modal.js"></script>-->
+    <script src="./js/menu.js"></script>
   </body>
 </html>
