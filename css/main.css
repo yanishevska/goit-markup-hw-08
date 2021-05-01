@@ -204,7 +204,7 @@ address {
 }
 
 .mobile__menu {
-  width: 100vw;
+  width: 100%;
   padding: 48px 40px;
   z-index: 1;
 }
@@ -308,6 +308,12 @@ address {
 
 .menu__socials-item:first-child {
   padding-left: 0;
+}
+
+@media screen and (max-width: 399.99px) {
+  :last-child {
+    padding-left: 0;
+  }
 }
 
 .backdrop {

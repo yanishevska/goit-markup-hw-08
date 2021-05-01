@@ -30,3 +30,8 @@
     padding-left: 0;
   }
 }
+@media screen and (max-width: 399.99px) {
+  &:last-child {
+    padding-left: 0;
+  }
+}
