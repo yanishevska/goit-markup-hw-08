@@ -24,8 +24,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
-  max-width: 528px;
-  min-height: 581px;
   padding: 40px;
 
   border-radius: 4px;
@@ -34,6 +32,15 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transition: transform 600ms ease-out 100ms;
+
+  @media screen and (max-width: 767.98px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal__title {

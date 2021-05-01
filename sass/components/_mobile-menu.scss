@@ -1,13 +1,13 @@
 .mobile__menu {
   width: 100%;
-  padding: 48px 40px;
-  z-index: 1;
 
   @media screen and (max-width: 767.98px) {
     position: absolute;
     height: 100vh;
     display: none;
     background-color: var(--main-white-color);
+    padding: 48px 40px;
+    z-index: 1;
   }
   &.is-open {
     display: block;
