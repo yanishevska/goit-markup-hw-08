@@ -1,0 +1,35 @@
+.menu__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  z-index: 2;
+
+  & .menu__icon-menu {
+    display: none;
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+  &.is-open .menu__icon-menu {
+    display: block;
+  }
+
+  &.is-open .menu__icon-cross {
+    display: none;
+  }
+  @media screen and (min-width: 767.98px) {
+    display: none;
+  }
+}
+
+.menu__icon-cross:hover,
+.menu__icon-cross:focus {
+  fill: var(--accent-color);
+}

@@ -1,0 +1,25 @@
+.mobile__menu {
+  width: 100vw;
+  padding: 48px 40px;
+  z-index: 1;
+
+  @media screen and (max-width: 767.98px) {
+    position: absolute;
+    height: 100vh;
+    display: none;
+    background-color: var(--main-white-color);
+  }
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.menu__icon-menu,
+.menu__icon-cross {
+  fill: var(--title-text-color);
+}
