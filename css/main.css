@@ -791,25 +791,25 @@ address {
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
   .hero {
-    background-image: var(--hero-gradient), url(../../images/hero/hero-tablet.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-tablet.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199.98px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(../../images/hero/hero-tablet@2x.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-tablet@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: var(--hero-gradient), url(../../images/hero/hero-desctop.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-desctop.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(../../images/hero/hero-desctop@2x.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-desctop@2x.jpg);
   }
 }
 
