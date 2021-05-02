@@ -55,7 +55,11 @@
                   href="mailto:info@devstudio.com"
                   class="link contacts__link contacts__mobile-mail"
                 >
-                  <svg class="contacts__icon" width="16" height="12">
+                  <svg
+                    class="contacts__icon contacts__mail--size"
+                    width="16"
+                    height="12"
+                  >
                     <use
                       href="./images/icons.svg/sprite.svg#icon-envelope-hover"
                     ></use>
@@ -68,7 +72,11 @@
                   href="tel:+380961111111"
                   class="link contacts__link contacts__mobile-tel"
                 >
-                  <svg class="contacts__icon" width="10" height="16">
+                  <svg
+                    class="contacts__icon contacts__tel--size"
+                    width="10"
+                    height="16"
+                  >
                     <use
                       href="./images/icons.svg/sprite.svg#icon-smartphone"
                     ></use>
@@ -243,12 +251,22 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list grid">
             <li class="gallery__item grid__item">
-              <img
-                src="./images/box1.jpg"
-                alt="Вёрстка"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery-desktop-1-min.jpg,
+                    ./images/gallery/gallery-desktop-1@2x-min.jpg
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  src="./images/gallery/gallery-desktop-1-min.jpg"
+                  alt="Вёрстка"
+                  width="370"
+                />
+              </picture>
 
               <div class="gallery__description">
                 <h3 class="gallery__title">Десктопные приложения</h3>
@@ -256,12 +274,21 @@
             </li>
 
             <li class="gallery__item grid__item">
-              <img
-                src="./images/box2.jpg"
-                alt="Опциональность"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery-desktop-2-min.jpg,
+                    ./images/gallery/gallery-desktop-2@2x-1-min.jpg
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/gallery/gallery-desktop-2-min.jpg"
+                  alt="Опциональность"
+                  width="370"
+                />
+              </picture>
 
               <div class="gallery__description">
                 <h3 class="gallery__title">Мобильные приложения</h3>
@@ -269,12 +296,22 @@
             </li>
 
             <li class="gallery__item grid__item">
-              <img
-                src="./images/box3.jpg"
-                alt="Дизайн"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/gallery-desktop-3-min.jpg,
+                    ./images/gallery/gallery-desktop-3@2x-2-min.jpg
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  src="./images/gallery/gallery-desktop-3-min.jpg"
+                  alt="Дизайн"
+                  width="370"
+                />
+              </picture>
 
               <div class="gallery__description">
                 <h3 class="gallery__title">Дизайнерские решения</h3>
@@ -290,12 +327,39 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list list grid">
             <li class="team__item grid__item">
-              <img
-                src="./images/img1.jpg"
-                alt="Молодой бородатый парень в очках и красной рубашке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/desktop-1.jpg,
+                    ./images/team/desktop/desktop-1@2x.jpg
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/tablet-1.jpg,
+                    ./images/team/tablet/tablet-1@2x.jpg
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/mobile-1.jpg,
+                    ./images/team/mobile/mobile-1@2x.jpg
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team/desktop/desktop-1.jpg"
+                  alt="Молодой бородатый парень в очках и красной рубашке"
+                  width="270"
+                />
+              </picture>
               <div class="team__card">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -362,12 +426,41 @@
             </li>
 
             <li class="team__item grid__item">
-              <img
-                src="./images/img2.jpg"
-                alt="Красивая девушка в чёрным пиджаке и очках"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/desktop-2.jpg,
+                    ./images/team/desktop/desktop-2@2x.jpg
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/tablet-2.jpg,
+                    ./images/team/tablet/tablet-2@2x.jpg
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/mobile-2.jpg,
+                    ./images/team/mobile/mobile-2@2x.jpg
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  src="./images/team/desktop/desktop-2.jpg"
+                  alt="Красивая девушка в чёрным пиджаке и очках"
+                  width="270"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -433,12 +526,40 @@
             </li>
 
             <li class="team__item grid__item">
-              <img
-                src="./images/img3.jpg"
-                alt="Молодой парень в голубой рубашке"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/desktop-3.jpg,
+                    ./images/team/desktop/desktop-3@2x.jpg
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/tablet-3.jpg,
+                    ./images/team/tablet/tablet-3@2x.jpg
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/mobile-3.jpg,
+                    ./images/team/mobile/mobile-3@2x.jpg
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team/desktop/desktop-3.jpg"
+                  alt="Молодой парень в голубой рубашке"
+                  width="270"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -504,12 +625,40 @@
             </li>
 
             <li class="team__item grid__item">
-              <img
-                src="./images/img4.jpg"
-                alt="Молодой бородатый парень в чёрной футболке "
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/desktop/desktop-4.jpg,
+                    ./images/team/desktop/desktop-4@2x.jpg
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/tablet/tablet-4.jpg,
+                    ./images/team/tablet/tablet-4@2x.jpg
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/team/mobile/mobile-4.jpg,
+                    ./images/team/mobile/mobile-4@2x.jpg
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/team/desktop/desktop-4.jpg"
+                  alt="Молодой бородатый парень в чёрной футболке "
+                  width="270"
+                />
+              </picture>
+
               <div class="team__card">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>

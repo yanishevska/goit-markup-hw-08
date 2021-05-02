@@ -79,3 +79,14 @@
     letter-spacing: 0.02em;
   }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__mail--size {
+    width: 14px;
+    height: 10px;
+  }
+  .contacts__tel--size {
+    width: 10px;
+    height: 14px;
+  }
+}

@@ -214,17 +214,21 @@ address {
 
 @media screen and (max-width: 767.98px) {
   .mobile__menu {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    min-width: 320px;
     height: 100vh;
-    display: none;
+    overflow-y: scroll;
     background-color: var(--main-white-color);
     padding: 48px 40px;
     z-index: 1;
+    transition: right var(--animation);
   }
 }
 
 .mobile__menu.is-open {
-  display: block;
+  right: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -355,7 +359,7 @@ address {
   transition: transform 600ms ease-out 100ms;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .modal {
     max-width: 450px;
   }
@@ -523,7 +527,7 @@ address {
   cursor: pointer;
 }
 
-@media screen and (max-width: 767.98px) {
+@media screen and (max-width: 1199.98px) {
   .form__check-label {
     font-size: 12px;
     line-height: 1.17;
@@ -770,6 +774,17 @@ address {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .contacts__mail--size {
+    width: 14px;
+    height: 10px;
+  }
+  .contacts__tel--size {
+    width: 10px;
+    height: 14px;
+  }
+}
+
 .hero {
   background-color: var(--dark-bg-color);
   background-image: var(--hero-gradient), url(../images/hero/hero-mobile.jpg);
@@ -803,13 +818,13 @@ address {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: var(--hero-gradient), url(../images/hero/hero-desctop.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-desktop.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(../images/hero/hero-desctop@2x.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-desktop@2x.jpg);
   }
 }
 

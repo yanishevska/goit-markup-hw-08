@@ -2,15 +2,20 @@
   width: 100%;
 
   @media screen and (max-width: 767.98px) {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    min-width: 320px;
     height: 100vh;
-    display: none;
+    overflow-y: scroll;
+
     background-color: var(--main-white-color);
     padding: 48px 40px;
     z-index: 1;
+    transition: right var(--animation);
   }
   &.is-open {
-    display: block;
+    right: 0;
   }
 
   @media screen and (min-width: 768px) {
