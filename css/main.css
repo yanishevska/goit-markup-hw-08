@@ -772,7 +772,7 @@ address {
 
 .hero {
   background-color: var(--dark-bg-color);
-  background-image: var(--hero-gradient), url(../../images/hero/hero-mobile.jpg);
+  background-image: var(--hero-gradient), url(../images/hero/hero-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -785,7 +785,7 @@ address {
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: var(--hero-gradient), url(../../images/hero/hero-mobile@2x.jpg);
+    background-image: var(--hero-gradient), url(../images/hero/hero-mobile@2x.jpg);
   }
 }
 
