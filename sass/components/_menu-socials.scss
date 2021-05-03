@@ -1,8 +1,12 @@
 .menu__socials {
   @media screen and (min-width: 768px) {
     display: none;
-    width: 100wv;
   }
+}
+
+.menu__socials {
+  width: 100vw;
+  margin-top: 64px;
 }
 
 .menu__socials-link {
@@ -17,7 +21,7 @@
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  position: absolute;
+
   bottom: 48px;
 }
 .menu__socials-item {
@@ -29,9 +33,10 @@
   &:first-child {
     padding-left: 0;
   }
-}
-@media screen and (max-width: 399.99px) {
-  &:last-child {
-    padding-left: 0;
+
+  @media screen and (max-width: 399.99px) {
+    &:last-child {
+      padding-left: 0;
+    }
   }
 }
