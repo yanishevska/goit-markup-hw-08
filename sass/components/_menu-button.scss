@@ -29,7 +29,9 @@
   }
 }
 
-.menu__icon-cross:hover,
-.menu__icon-cross:focus {
-  fill: var(--accent-color);
+.menu__icon-cross {
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
 }
