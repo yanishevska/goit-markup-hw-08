@@ -256,30 +256,49 @@ address {
   z-index: 2;
 }
 
-.menu__button .menu__icon-menu {
-  display: none;
-}
-
-.menu__button .menu__icon-menu:hover, .menu__button .menu__icon-menu:focus {
-  fill: var(--accent-color);
-}
-
-.menu__button.is-open .menu__icon-menu {
-  display: block;
-}
-
-.menu__button.is-open .menu__icon-cross {
-  display: none;
-}
-
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .menu__button {
     display: none;
   }
 }
 
+.menu__button .menu__icon-cross {
+  display: none;
+}
+
+.menu__button.menu__icon-menu {
+  display: block;
+}
+
+.menu__button.is-open .menu__icon-cross {
+  display: block;
+}
+
+.menu__button.is-open .menu__icon-menu {
+  display: none;
+}
+
+.menu__icon-menu {
+  display: block;
+}
+
+.menu__icon-menu:hover, .menu__icon-menu:focus {
+  fill: var(--accent-color);
+}
+
 .menu__icon-cross:hover, .menu__icon-cross:focus {
   fill: var(--accent-color);
+}
+
+.menu__button.is-open {
+  position: fixed;
+}
+
+.menu__icon-menu,
+.menu__icon-cross {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
@@ -350,10 +369,8 @@ address {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin: 0 auto;
   width: 100%;
   padding: 40px;
   border-radius: 4px;
@@ -372,6 +389,10 @@ address {
   .modal {
     max-width: 528px;
     min-height: 581px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -384,6 +405,12 @@ address {
   line-height: 23px;
   color: var(--title-text-color);
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 399.98px) {
+  .modal__title {
+    font-size: 18px;
+  }
 }
 
 .modal__btn-close {
@@ -405,6 +432,13 @@ address {
 
 .modal__btn-close:hover, .modal__btn-close:focus {
   fill: var(--accent-color);
+}
+
+@media screen and (max-width: 768px) {
+  .backdrop {
+    padding: 94px 15px;
+    overflow-y: scroll;
+  }
 }
 
 .form__field {
@@ -528,9 +562,17 @@ address {
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-size: 8px;
+  flex-wrap: wrap;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (min-width: 422px) and (max-width: 478.98px) {
+  .form__check-label {
+    font-size: 10px;
+  }
+}
+
+@media screen and (min-width: 479px) and (max-width: 1199.98px) {
   .form__check-label {
     font-size: 12px;
     line-height: 1.17;

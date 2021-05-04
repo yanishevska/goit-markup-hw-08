@@ -214,30 +214,49 @@ address {
   z-index: 2;
 }
 
-.menu__button .menu__icon-menu {
-  display: none;
-}
-
-.menu__button .menu__icon-menu:hover, .menu__button .menu__icon-menu:focus {
-  fill: var(--accent-color);
-}
-
-.menu__button.is-open .menu__icon-menu {
-  display: block;
-}
-
-.menu__button.is-open .menu__icon-cross {
-  display: none;
-}
-
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 768px) {
   .menu__button {
     display: none;
   }
 }
 
+.menu__button .menu__icon-cross {
+  display: none;
+}
+
+.menu__button.menu__icon-menu {
+  display: block;
+}
+
+.menu__button.is-open .menu__icon-cross {
+  display: block;
+}
+
+.menu__button.is-open .menu__icon-menu {
+  display: none;
+}
+
+.menu__icon-menu {
+  display: block;
+}
+
+.menu__icon-menu:hover, .menu__icon-menu:focus {
+  fill: var(--accent-color);
+}
+
 .menu__icon-cross:hover, .menu__icon-cross:focus {
   fill: var(--accent-color);
+}
+
+.menu__button.is-open {
+  position: fixed;
+}
+
+.menu__icon-menu,
+.menu__icon-cross {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 768px) {
