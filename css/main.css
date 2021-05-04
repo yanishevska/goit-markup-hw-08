@@ -257,6 +257,10 @@ address {
   z-index: 2;
 }
 
+.menu__button.is-open {
+  position: fixed;
+}
+
 @media screen and (min-width: 768px) {
   .menu__button {
     display: none;
@@ -291,10 +295,6 @@ address {
   fill: var(--accent-color);
 }
 
-.menu__button.is-open {
-  position: fixed;
-}
-
 .menu__icon-menu,
 .menu__icon-cross {
   transition-property: fill;
@@ -310,7 +310,6 @@ address {
 
 .menu__socials {
   width: 100vw;
-  margin-top: 64px;
 }
 
 .menu__socials-link {
@@ -363,6 +362,8 @@ address {
   opacity: 1;
   transition: opacity 500ms ease-out 200ms;
   z-index: 900;
+  padding: 75px 15px;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -439,11 +440,6 @@ address {
 
 .modal__btn-close:hover, .modal__btn-close:focus {
   fill: var(--accent-color);
-}
-
-.backdrop {
-  padding: 75px 15px;
-  overflow-y: scroll;
 }
 
 .form__field {

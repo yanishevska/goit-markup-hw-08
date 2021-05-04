@@ -65,15 +65,13 @@
   }
 }
 
-@media screen and (max-width: 767.98px) {
-  .contacts__mobile-tel {
+.contacts__mobile-tel {
+  @media screen and (max-width: 767.98px) {
     color: var(--accent-color);
     margin-bottom: 34px;
   }
-}
 
-@media screen and (max-width: 380px) {
-  .contacts__mobile-tel {
+  @media screen and (max-width: 380px) {
     font-size: 25px;
   }
 }

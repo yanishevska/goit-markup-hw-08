@@ -215,6 +215,10 @@ address {
   z-index: 2;
 }
 
+.menu__button.is-open {
+  position: fixed;
+}
+
 @media screen and (min-width: 768px) {
   .menu__button {
     display: none;
@@ -249,10 +253,6 @@ address {
   fill: var(--accent-color);
 }
 
-.menu__button.is-open {
-  position: fixed;
-}
-
 .menu__icon-menu,
 .menu__icon-cross {
   transition-property: fill;
@@ -268,7 +268,6 @@ address {
 
 .menu__socials {
   width: 100vw;
-  margin-top: 64px;
 }
 
 .menu__socials-link {
@@ -695,25 +694,10 @@ address {
 }
 
 .card__item {
-  transition: box-shadow var(--animation);
-}
-
-.card__item:hover, .card__item:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  cursor: pointer;
-}
-
-.card__item--border {
-  border-bottom: 1px solid var(--border-box-color);
-  border-left: 1px solid var(--border-box-color);
-  border-right: 1px solid var(--border-box-color);
-  box-sizing: border-box;
-}
-
-.card__item {
   --grid-item: 1;
   margin-top: 30px;
   margin-left: 30px;
+  transition: box-shadow var(--animation);
 }
 
 @media screen and (min-width: 480px) {
@@ -734,8 +718,20 @@ address {
   .card__item {
     --grid-item: 3;
     margin-left: 30px;
-    max-width: 370px;
+    max-width: 370p;
   }
+}
+
+.card__item:hover, .card__item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  cursor: pointer;
+}
+
+.card__item--border {
+  border-bottom: 1px solid var(--border-box-color);
+  border-left: 1px solid var(--border-box-color);
+  border-right: 1px solid var(--border-box-color);
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

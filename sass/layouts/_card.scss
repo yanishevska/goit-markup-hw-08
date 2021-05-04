@@ -19,8 +19,26 @@
 }
 
 .card__item {
+  --grid-item: 1;
+  margin-top: 30px;
+  margin-left: 30px;
+
   transition: box-shadow var(--animation);
 
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+    --grid-item: 2;
+    margin-left: 30px;
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    --grid-item: 3;
+    margin-left: 30px;
+    max-width: 370p;
+  }
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -37,26 +55,6 @@
   }
 }
 
-.card__item {
-  --grid-item: 1;
-  margin-top: 30px;
-  margin-left: 30px;
-
-  @media screen and (min-width: 480px) {
-    max-width: 450px;
-  }
-
-  @media screen and (min-width: 768px) {
-    --grid-item: 2;
-    margin-left: 30px;
-    max-width: 354px;
-  }
-  @media screen and (min-width: 1200px) {
-    --grid-item: 3;
-    margin-left: 30px;
-    max-width: 370px;
-  }
-}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .card__item:nth-child(2n) {
     margin-right: 0;

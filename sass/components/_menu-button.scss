@@ -10,6 +10,10 @@
 
   z-index: 2;
 
+  &.is-open {
+    position: fixed;
+  }
+
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -40,10 +44,6 @@
   &:focus {
     fill: var(--accent-color);
   }
-}
-
-.menu__button.is-open {
-  position: fixed;
 }
 
 .menu__icon-menu,
