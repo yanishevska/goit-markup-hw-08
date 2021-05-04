@@ -1,10 +1,12 @@
 .mobile__menu {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 
   @media screen and (max-width: 767.98px) {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -120%;
     min-width: 320px;
     height: 100vh;
     overflow-y: scroll;
@@ -13,17 +15,16 @@
     padding: 48px 40px;
     z-index: 1;
     transition: right var(--animation);
+    flex-direction: column;
+  }
+  @media screen and (min-width: 768px) {
+    align-items: center;
   }
   &.is-open {
     right: 0;
   }
-
-  @media screen and (min-width: 768px) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 }
+
 .menu__icon-menu,
 .menu__icon-cross {
   fill: var(--title-text-color);

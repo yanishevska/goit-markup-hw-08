@@ -87,8 +87,9 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .backdrop {
-    padding: 94px 15px;
-    overflow-y: scroll;
-  }
+}
+
+.backdrop {
+  padding: 75px 15px;
+  overflow-y: scroll;
 }

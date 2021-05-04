@@ -16,6 +16,9 @@
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  @media screen and (max-width: 380px) {
+    font-size: 12px;
+  }
 }
 .menu__socials-list {
   display: flex;

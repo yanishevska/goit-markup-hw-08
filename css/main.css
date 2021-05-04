@@ -210,13 +210,15 @@ address {
 
 .mobile__menu {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media screen and (max-width: 767.98px) {
   .mobile__menu {
     position: fixed;
     top: 0;
-    right: -100%;
+    right: -120%;
     min-width: 320px;
     height: 100vh;
     overflow-y: scroll;
@@ -224,19 +226,18 @@ address {
     padding: 48px 40px;
     z-index: 1;
     transition: right var(--animation);
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile__menu {
+    align-items: center;
   }
 }
 
 .mobile__menu.is-open {
   right: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .mobile__menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
 }
 
 .menu__icon-menu,
@@ -318,6 +319,12 @@ address {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 380px) {
+  .menu__socials-link {
+    font-size: 12px;
+  }
 }
 
 .menu__socials-list {
@@ -434,11 +441,9 @@ address {
   fill: var(--accent-color);
 }
 
-@media screen and (max-width: 768px) {
-  .backdrop {
-    padding: 94px 15px;
-    overflow-y: scroll;
-  }
+.backdrop {
+  padding: 75px 15px;
+  overflow-y: scroll;
 }
 
 .form__field {
@@ -740,14 +745,17 @@ address {
   letter-spacing: 0.02em;
 }
 
+@media screen and (max-width: 767.98px) {
+  .contacts {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .contacts {
     display: flex;
   }
-}
-
-.contacts__block {
-  margin-left: auto;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199.98px) {
@@ -816,7 +824,7 @@ address {
 @media screen and (max-width: 767.98px) {
   .contacts__mobile-tel {
     color: var(--accent-color);
-    margin-top: 135px;
+    margin-bottom: 34px;
   }
 }
 
@@ -832,7 +840,13 @@ address {
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    margin-top: 34px;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contacts__mobile-mail {
+    font-size: 18px;
   }
 }
 
@@ -844,18 +858,6 @@ address {
   .contacts__tel--size {
     width: 10px;
     height: 14px;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .contacts__tel {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .contacts__mobile-tel {
-    display: none;
   }
 }
 
