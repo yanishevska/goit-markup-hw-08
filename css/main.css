@@ -320,7 +320,7 @@ address {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 400px) {
   .menu__socials-link {
     font-size: 12px;
   }
@@ -344,12 +344,6 @@ address {
 
 .menu__socials-item:first-child {
   padding-left: 0;
-}
-
-@media screen and (max-width: 399.99px) {
-  .menu__socials-item:last-child {
-    padding-left: 0;
-  }
 }
 
 .backdrop {
