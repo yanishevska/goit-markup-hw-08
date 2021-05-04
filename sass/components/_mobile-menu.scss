@@ -14,8 +14,9 @@
     background-color: var(--main-white-color);
     padding: 48px 40px;
     z-index: 1;
-    transition: right var(--animation);
     flex-direction: column;
+
+    transition: right ease-out 500ms;
   }
   @media screen and (min-width: 768px) {
     align-items: center;
