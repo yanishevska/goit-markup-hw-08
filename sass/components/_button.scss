@@ -18,3 +18,17 @@
     color: var(--main-white-color);
   }
 }
+
+.button__accent {
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--main-white-color);
+  border-radius: 4px;
+
+  box-shadow: var(--button-shadow);
+  background-color: var(--accent-color);
+}

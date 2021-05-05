@@ -20,6 +20,7 @@
     rgba(47, 48, 58, 0.4),
     rgba(47, 48, 58, 0.4)
   );
+  --button-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 html {
@@ -166,6 +167,19 @@ address {
   color: var(--main-white-color);
 }
 
+.button__accent {
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--main-white-color);
+  border-radius: 4px;
+  box-shadow: var(--button-shadow);
+  background-color: var(--accent-color);
+}
+
 .mobile__menu {
   width: 100%;
   display: flex;
@@ -278,7 +292,7 @@ address {
   letter-spacing: 0.02em;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 380px) {
   .menu__socials-link {
     font-size: 12px;
   }
@@ -430,16 +444,32 @@ address {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .section-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  margin-bottom: 30px;
   text-align: center;
-  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .header {
@@ -769,6 +799,7 @@ address {
   font-family: var(--font-title);
   font-weight: 700;
   font-size: 14px;
+  line-height: 1.14;
   text-transform: uppercase;
   color: var(--main-white-color);
   padding-bottom: 20px;
@@ -896,16 +927,6 @@ address {
   text-align: center;
   padding: 10px 28px;
   margin-left: 12px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  cursor: pointer;
-  border: none;
-  border-radius: 4px;
-  background-color: var(--accent-color);
-  color: #ffffff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (min-width: 1200px) {
